@@ -1,0 +1,9 @@
+{
+  "name": "rochester-veterinary-clinic",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "node dev-server.js"
+  }
+}
+
