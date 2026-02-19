@@ -134,45 +134,67 @@
 
       <section class="section reviews reveal" id="reviews">
         <div class="container">
-          <h2>What Pet Owners Are Saying</h2>
-          <div class="review-grid">
-            <article class="review-card">
-              <p class="stars" aria-label="Five out of five stars">★★★★★</p>
-              <p>
-                "Thank you for the great care of our puppy. Shout out to Trevor
-                for coordinating Sandy's appointments."
-              </p>
-              <p class="reviewer">- Mark King</p>
-            </article>
-            <article class="review-card">
-              <p class="stars" aria-label="Five out of five stars">★★★★★</p>
-              <p>"Dr. Sturdy saved my cat's life! Very reasonable prices."</p>
-              <p class="reviewer">- Meagan</p>
-            </article>
-            <article class="review-card">
-              <p class="stars" aria-label="Five out of five stars">★★★★★</p>
-              <p>
-                "Through 4 cats and more than 30 years, nothing but great
-                caring service."
-              </p>
-              <p class="reviewer">- E S</p>
-            </article>
-            <article class="review-card">
-              <p class="stars" aria-label="Five out of five stars">★★★★★</p>
-              <p>
-                "The compassion shown to my family when we had to put our dog
-                down was truly remarkable."
-              </p>
-              <p class="reviewer">- Dr. Nalo Thomas Mitchell</p>
-            </article>
-            <article class="review-card">
-              <p class="stars" aria-label="Five out of five stars">★★★★★</p>
-              <p>
-                "One of the best vets in the area. Down to earth and works to
-                not overly stress the animals."
-              </p>
-              <p class="reviewer">- Xaos</p>
-            </article>
+          <div class="section-head">
+            <h2>What Pet Owners Are Saying</h2>
+            <div class="carousel-controls">
+              <button class="carousel-btn" type="button" data-carousel-prev aria-label="Previous review">
+                ‹
+              </button>
+              <button class="carousel-btn" type="button" data-carousel-next aria-label="Next review">
+                ›
+              </button>
+            </div>
+          </div>
+          <div class="carousel" data-carousel>
+            <p class="sr-only" aria-live="polite" data-carousel-status>
+              Slide 1 of 5
+            </p>
+            <div class="carousel-track" id="reviews-track" data-carousel-track>
+              <article class="review-card is-active" data-carousel-slide role="group" aria-roledescription="slide" aria-label="Review 1 of 5">
+                <p class="stars" aria-label="Five out of five stars">★★★★★</p>
+                <p>
+                  "Thank you for the great care of our puppy. Shout out to Trevor
+                  for coordinating Sandy's appointments."
+                </p>
+                <p class="reviewer">- Mark King</p>
+              </article>
+              <article class="review-card" data-carousel-slide role="group" aria-roledescription="slide" aria-label="Review 2 of 5">
+                <p class="stars" aria-label="Five out of five stars">★★★★★</p>
+                <p>"Dr. Sturdy saved my cat's life! Very reasonable prices."</p>
+                <p class="reviewer">- Meagan</p>
+              </article>
+              <article class="review-card" data-carousel-slide role="group" aria-roledescription="slide" aria-label="Review 3 of 5">
+                <p class="stars" aria-label="Five out of five stars">★★★★★</p>
+                <p>
+                  "Through 4 cats and more than 30 years, nothing but great
+                  caring service."
+                </p>
+                <p class="reviewer">- E S</p>
+              </article>
+              <article class="review-card" data-carousel-slide role="group" aria-roledescription="slide" aria-label="Review 4 of 5">
+                <p class="stars" aria-label="Five out of five stars">★★★★★</p>
+                <p>
+                  "The compassion shown to my family when we had to put our dog
+                  down was truly remarkable."
+                </p>
+                <p class="reviewer">- Dr. Nalo Thomas Mitchell</p>
+              </article>
+              <article class="review-card" data-carousel-slide role="group" aria-roledescription="slide" aria-label="Review 5 of 5">
+                <p class="stars" aria-label="Five out of five stars">★★★★★</p>
+                <p>
+                  "One of the best vets in the area. Down to earth and works to
+                  not overly stress the animals."
+                </p>
+                <p class="reviewer">- Xaos</p>
+              </article>
+            </div>
+            <div class="carousel-dots" role="tablist" aria-label="Review navigation">
+              <button class="dot is-active" type="button" role="tab" aria-selected="true" aria-controls="reviews-track" aria-label="Go to review 1" data-carousel-dot></button>
+              <button class="dot" type="button" role="tab" aria-selected="false" aria-controls="reviews-track" aria-label="Go to review 2" data-carousel-dot></button>
+              <button class="dot" type="button" role="tab" aria-selected="false" aria-controls="reviews-track" aria-label="Go to review 3" data-carousel-dot></button>
+              <button class="dot" type="button" role="tab" aria-selected="false" aria-controls="reviews-track" aria-label="Go to review 4" data-carousel-dot></button>
+              <button class="dot" type="button" role="tab" aria-selected="false" aria-controls="reviews-track" aria-label="Go to review 5" data-carousel-dot></button>
+            </div>
           </div>
         </div>
       </section>

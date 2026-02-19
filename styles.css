@@ -269,8 +269,99 @@ a:hover {
   );
 }
 
-.review-grid {
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+.section-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.carousel {
+  margin-top: 1.2rem;
+  position: relative;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 1rem;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.carousel-track[data-carousel-track] {
+  transform: translateX(0);
+  transition: transform 420ms ease;
+}
+
+.review-card {
+  flex: 0 0 100%;
+}
+
+.review-card.is-active {
+  box-shadow: 0 12px 24px rgba(35, 49, 40, 0.12);
+}
+
+.carousel-controls {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.carousel-btn {
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 50%;
+  border: 1px solid rgba(53, 79, 62, 0.3);
+  background: var(--white);
+  color: var(--sage-700);
+  font-size: 1.4rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.carousel-btn:hover {
+  transform: translateY(-1px);
+  border-color: rgba(53, 79, 62, 0.6);
+  box-shadow: 0 10px 18px rgba(35, 49, 40, 0.12);
+}
+
+.carousel-btn:focus-visible {
+  outline: 3px solid rgba(50, 77, 62, 0.34);
+  outline-offset: 2px;
+}
+
+.carousel-dots {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.dot {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  border: 1px solid rgba(53, 79, 62, 0.4);
+  background: transparent;
+  cursor: pointer;
+  transition: transform 160ms ease, background-color 160ms ease, border-color 160ms ease;
+}
+
+.dot.is-active {
+  background: var(--sage-700);
+  border-color: var(--sage-700);
+  transform: scale(1.1);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
 
 .stars {
