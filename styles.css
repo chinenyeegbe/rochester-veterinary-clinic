@@ -274,16 +274,18 @@ a:hover {
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .carousel {
   margin-top: 1.2rem;
   position: relative;
+  --carousel-gap: 1rem;
 }
 
 .carousel-track {
   display: flex;
-  gap: 1rem;
+  gap: var(--carousel-gap);
   overflow: hidden;
   scroll-behavior: smooth;
 }
@@ -294,7 +296,7 @@ a:hover {
 }
 
 .review-card {
-  flex: 0 0 100%;
+  flex: 0 0 calc(50% - 0.5rem);
 }
 
 .review-card.is-active {
@@ -476,6 +478,16 @@ a:hover {
 
   .hero-panel {
     max-width: 520px;
+  }
+}
+
+@media (max-width: 720px) {
+  .review-card {
+    flex: 0 0 100%;
+  }
+
+  .carousel {
+    --carousel-gap: 0.8rem;
   }
 }
 
